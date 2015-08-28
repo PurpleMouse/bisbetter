@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150828045802) do
+ActiveRecord::Schema.define(version: 20150828063308) do
 
   create_table "users", force: true do |t|
     t.string   "email",           limit: 50,               null: false
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150828045802) do
     t.string   "phone_number",    limit: 11,               null: false
     t.string   "gender",          limit: 6,                null: false
     t.string   "stinger_count",   limit: 5,  default: "0", null: false
-    t.string   "password_salt",                            null: false
+    t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
