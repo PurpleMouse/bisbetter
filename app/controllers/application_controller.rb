@@ -11,4 +11,9 @@ class ApplicationController < ActionController::Base
   def authorize
     redirect_to '/users/new' unless current_user
   end
+
+  def zone_defence
+   
+  end
+
 end
